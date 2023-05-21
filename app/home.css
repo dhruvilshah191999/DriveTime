@@ -1,0 +1,98 @@
+p {
+  font-size: 13px;
+  line-height: 21px;
+  letter-spacing: 0.15px;
+  color: #686868;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-container .container-1 {
+  width: 100%;
+  position: relative;
+}
+
+.main-container .container-1 img {
+  width: 100%;
+  height: 300px;
+}
+
+.verifyCard {
+  height: 90px;
+  width: 100%;
+  padding: 20px;
+  background-color: white;
+  margin-top: -20px;
+  border-radius: 12px;
+  box-shadow: 0px -10px 10px 0px rgba(115, 115, 115, 0.1);
+}
+
+.cardTitle {
+  color: black;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 0.15px;
+}
+
+.status {
+  padding: 3px 13px;
+  border-radius: 20px;
+  color: white;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.document-container {
+  border: 3px dotted #d0d0d0;
+  padding: 21px 16px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  position: relative;
+  border-radius: 12px;
+  background-color: #e6e6e6;
+}
+
+.document-container p {
+  color: black;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+}
+
+.document-container .button-group {
+  position: absolute;
+  right: 0;
+  padding: 0 16px;
+  display: flex;
+}
+
+.document-container .button-group img {
+  margin-left: 30px;
+}
+
+.document-line {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+}
+
+.document-line .line {
+  height: 1px;
+  background-color: black;
+  width: 48%;
+}
+
+.document-line p {
+  width: 4%;
+  color: black;
+  font-weight: bold;
+  margin-top: -5px;
+  font-size: 14px;
+  font-family: "Open Sans";
+}
