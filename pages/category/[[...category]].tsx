@@ -30,13 +30,13 @@ function CategoryPage({ category }: { category: string }) {
   const renderColor = (str: string) => {
     switch (str) {
       case "missing":
-        return "#1976D2";
+        return "bg-[#1976D2]";
       case "inProgress":
-        return "#ED6C02";
+        return "bg-[#ED6C02]";
       case "underReview":
-        return "#2E7D32";
+        return "bg-[#2E7D32]";
       default:
-        return "#1976D2";
+        return "bg-[#1976D2]";
     }
   };
 
@@ -87,9 +87,9 @@ function CategoryPage({ category }: { category: string }) {
                         {firstCapital(category)}
                       </p>
                       <p
-                        className={`bg-[${renderColor(
+                        className={`${renderColor(
                           applicant?.categories[category]?.status
-                        )}] status absolute right-0`}
+                        )} status absolute right-0`}
                       >
                         {" "}
                         {applicant?.categories[category]?.status === "missing"
