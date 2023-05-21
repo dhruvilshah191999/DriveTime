@@ -6,11 +6,24 @@ import Layout from "@/components/Layout";
 import useStore from "@/store/useStore";
 import Image from "next/image";
 import React from "react";
-import { firstCapital, renderColor } from "@/utils/common-functions";
+import { firstCapital } from "@/utils/common-functions";
 import Link from "next/link";
 
 const Home: React.FC = (): JSX.Element => {
   const { applicant } = useStore();
+
+  const renderColor = (str: string) => {
+    switch (str) {
+      case "missing":
+        return "#1976D2";
+      case "inProgress":
+        return "#ED6C02";
+      case "underReview":
+        return "#2E7D32";
+      default:
+        return "#1976D2";
+    }
+  };
 
   return (
     <Layout>

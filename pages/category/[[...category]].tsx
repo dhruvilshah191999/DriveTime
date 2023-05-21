@@ -10,11 +10,7 @@ import driveTime from "@/public/assets/DriveTime.svg";
 import camera from "@/public/assets/camera.png";
 import upload from "@/public/assets/upload.png";
 import Image from "next/image";
-import {
-  firstCapital,
-  getDocumentName,
-  renderColor,
-} from "@/utils/common-functions";
+import { firstCapital, getDocumentName } from "@/utils/common-functions";
 import useStore from "@/store/useStore";
 import loader from "@/public/assets/Eclipse.svg";
 import { GetServerSideProps } from "next";
@@ -30,6 +26,19 @@ function CategoryPage({ category }: { category: string }) {
       }
     }
   }, [applicant]);
+
+  const renderColor = (str: string) => {
+    switch (str) {
+      case "missing":
+        return "#1976D2";
+      case "inProgress":
+        return "#ED6C02";
+      case "underReview":
+        return "#2E7D32";
+      default:
+        return "#1976D2";
+    }
+  };
 
   return (
     <Layout>
